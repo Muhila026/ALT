@@ -36,7 +36,7 @@
     content: '';
     position: absolute;
     inset: -100px 0 0 -100px;
-    background-image: url(/Img/pngwing.com.png);
+    /* background-image: url(/Img/pngwing.com.png); */
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.05;
