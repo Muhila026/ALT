@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around Lanka</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!--  Bootstrap  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Css  -->
+    <link href="css/style.css" rel="stylesheet">
+  
+</head>
+<body>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+               <h1 class="text-primary m-0">ALT</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Home Page.html" class="nav-item nav-link active">Home</a>
+                    <a href="About Page.html" class="nav-item nav-link">About</a>
+                    <a href="Service Page.html" class="nav-item nav-link">Services</a>
+                    <a href="Package Page.html" class="nav-item nav-link">Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Destination Page.html" class="dropdown-item">Destination</a>
+                            <a href="Booking Page.html" class="dropdown-item">Booking</a>
+                        </div>
+                    </div>
+                    <a href="Contact Page.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary rounded-pill py-2 px-4" onclick="showRegisterPopup()">Register</a>
+            <!-- Register -->
+            <div class="overlay_all" id="register-overlay">
+                <div class="popup_all">
+                    <span class="popup_all-close" onclick="hideRegisterPopup()">&times;</span>
+                    <h2>Register</h2>
+                    <form class="register-all">
+                        <p>Name</p>
+                        <input type="text" placeholder="Enter Name" required>
+                        <p>Email</p>
+                        <input type="email" placeholder="Enter Email" required>
+                        <p>Phone</p>
+                        <input type="tel" placeholder="Enter Phone Number" required>
+                        <p>Password</p>
+                        <input type="password" placeholder="Enter Password" required>
+                        <p>Confirm Password</p>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+            </div>            
+            </div>
+        </nav>
+       <!-- head img & text -->
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header rounded-3{}">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">The Best Places to Go in Asia in 2024 </p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Colombo">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="img/aboutus.webp" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                <h1 class="mb-4">SriLanka Is <span class="text-primary">Back</span></h1>
+                <p class="mb-4">In the south of the country, new luxury resorts continue to entice.
+                    Next to the Indian Ocean-bordering Yala National Park, one of the best places to spot Sri Lanka’s elusive leopards; 
+                    and the art deco-inspired The Charleston, which opens in December in the UNESCO-listed Galle Fort.
+                </p>
+                <p class="mb-4">The Pekoe Trail, a new 300km network of hiking routes that snakes its way through Sri Lanka’s highlands, 
+                    continues. Traversing historic tea plantations, colonial estates, local villages, holy shrines, and forests brimming with biodiversity, 
+                    it’s a novel way to experience Sri Lanka’s lush hill country.</p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="About Page.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- Service Start -->
+    <div class="container py-5">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+            <h1 class="mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-book text-primary mb-4"></i>
+                        <h5>Accommodation Booking</h5>
+                        <p>Book the best hotels, resorts, and guesthouses to suit all budgets and preferences, ensuring a comfortable stay throughout your journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-plane text-primary mb-4"></i>
+                        <h5>Transportation Services</h5>
+                        <p>Convenient and reliable transport options including car rentals, airport transfers, and chauffeured services to make your travel hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                        <h5>Guided Tours</h5>
+                        <p>Experience the best of Sri Lanka with our expert guides who provide in-depth knowledge and personalized tours of popular and offbeat destinations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                        <h5>Adventure Activities</h5>
+                        <p>Engage in thrilling activities such as hiking, surfing, diving, and wildlife safaris, designed for adrenaline junkies and nature enthusiasts alike.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-flag text-primary mb-4"></i>
+                        <h5>Cultural Experiences</h5>
+                        <p>Immerse yourself in local culture through traditional dance performances, historical site visits, and participation in local festivals and rituals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-thermometer-full text-primary mb-4"></i>
+                        <h5>Dining and Cuisine Tours</h5>
+                        <p>Savor the rich flavors of Sri Lankan cuisine with curated food tours that take you to the best local eateries, street food stalls, and fine dining restaurants.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-car text-primary mb-4"></i>
+                        <h5>Travel Insurance</h5>
+                        <p>Travel with peace of mind with our comprehensive travel insurance plans covering medical emergencies, trip cancellations, and other unforeseen events.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                        <h5>Hotels Management</h5>
+                        <p>The most comprehensive selection of Hotels in Sri Lanka</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+    <section>  
+        <div id="card-area">
+            <div class="wrapper_2">
+                <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
+                    <h1 class="mb-5"> Our Destinations</h1>
+                </div>
+                <div class="box_1-area">
+                    <div class="box_1">
+                        <img alt="Jaffna Library" src="img/jaffna lib2.avif">
+                        <div class="overlay_2">
+                            <h3>Jaffna</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>   
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Mannar" src="img/Mannar.jpg">
+                        <div class="overlay_2">
+                            <h3>Mannar</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>   
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Galle" src="img/Galle.jpg">
+                        <div class="overlay_2">
+                            <h3>Galle</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>   
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Colombo" src="img/colombo lo.jpg">
+                        <div class="overlay_2">
+                            <h3>Colombo</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Ella" src="img/ella1.jpg">
+                        <div class="overlay_2">
+                            <h3>Ella</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Polonnaruwa" src="img/polonnaruwa.jpg">
+                        <div class="overlay_2">
+                            <h3>Polonnaruwa</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Nuwararliya" src="img/nuwararliya.jpg">
+                        <div class="overlay_2">
+                            <h3>Nuwararliya</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Kandy" src="img/kandy.jpeg">
+                        <div class="overlay_2">
+                            <h3>Kandy</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Dambull" src="img/Dambulla.jpg">
+                        <div class="overlay_2">
+                            <h3>Dambulla</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Trincomalee" src="img/Trincomalee.jpg">
+                        <div class="overlay_2">
+                            <h3>Trincomalee</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Anuradhapura" src="img/Anuradhapura.webp">
+                        <div class="overlay_2">
+                            <h3>Anuradhapura</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                    <div class="box_1">
+                        <img alt="Sigiriya" src="img/Sigiriya.webp">
+                        <div class="overlay_2">
+                            <h3>Sigiriya</h3>
+                            <a class="btn_3" href="Destination Page.html">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popular Destinations -->
+        <div class="container-xxl py-5 destination">
+            <div class="container">
+                <div class="text-center">
+                    
+                    <h1 class="mb-5">Popular Destinations</h1>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="row g-3">
+                            <div class="col-lg-12 col-md-12">
+                                <a class="position-relative d-block overflow-hidden" href="Destination Page.html">
+                                    <img class="img-fluid" src="img/ella.jpg" alt="">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+                                    <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Ella</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <a class="position-relative d-block overflow-hidden" href="Destination Page.html">
+                                    <img class="img-fluid" src="img/colombo lo.jpg" alt="">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
+                                    <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Colombo</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <a class="position-relative d-block overflow-hidden" href="Destination Page.html">
+                                    <img class="img-fluid" src="img/nuwararliya.jpg" alt="">
+                                    <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
+                                    <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Nuwararliya</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+                        <a class="position-relative d-block h-100 overflow-hidden" href="Destination Page.html">
+                            <img class="img-fluid position-absolute w-100 h-100" src="img/polonnaruwa.jpg" alt="" style="object-fit: cover;">
+                            <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Polonnaruwa</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Awesome Packages</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ella,Kandy,colombo</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>12 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Magical Trip to Sri Lanka</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="Package Page.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="Booking Page.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/animal.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Sigaraja,Ella,Jaffna</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>7 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Thrilling Sri Lanka</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="Package Page.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="Booking Page.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Pleasant.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Trinco,Galle</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>5 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>4 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>Pleasant Sri Lanka</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="Package Page.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="Booking Page.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4">
+                <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+                <h1 class="mb-5">3 Easy Steps</h1>
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Choose A Destination</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Explore Sri Lanka's diverse destinations, from ancient Polonnaruwa ruins to sun-kissed Bentota beaches.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Pay Online</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Easily finalize your booking with our secure online payment system, ensuring a hassle-free experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-plane fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Fly Today</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">With everything sorted, you're ready to pack your bags and embark on your Sri Lankan adventure today!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Clients Say!!!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/client1.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Kavin Raj</h5>
+                    <p>Colombo</p>
+                    <p class="mb-0">Tourium made our trip to Sri Lanka unforgettable! The guides were knowledgeable and friendly, and the booking process was so easy.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/client2.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Leela Ravi</h5>
+                    <p>Chennai, INDIA</p>
+                    <p class="mt-2 mb-0">I loved the variety of tours Tourium offered. From cultural explorations to wildlife safaris, there was something for everyone in our group!</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/client3.webp" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Kaarthik</h5>
+                    <p>AUSTRALIA</p>
+                    <p class="mt-2 mb-0">Thank you for your kind words, David! We're delighted to hear that you found our booking process easy and that you enjoyed your time exploring 
+                        Sri Lanka's rich history and stunning coastal areas. We look forward to helping you plan your next adventure</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/client4.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Vimalan</h5>
+                    <p>USA</p>
+                    <p class="mt-2 mb-0">Tourium exceeded our expectations! Our guide, Priya, was incredibly knowledgeable about Sri Lanka's wildlife and made our safari tour unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5" rounderd>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="About Page.html">About Us</a>
+                    <a class="btn btn-link" href="Contact Page.html">Contact Us</a>
+                    <a class="btn btn-link" href="About Page.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="About Page.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="Contact Page.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 80, KKS Road, Nallur,Jaffna, Sri Lanka.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>021 221 2389 / +94 76 4534298</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ALT24PVT_Help@Gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/jaffna lib2.avif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/ella.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/kandy.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/nuwararliya.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/polonnaruwa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Around Lanka Tourisum Pvt & Ltd</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">Muhila Vijayakumar</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="Home Page.html">Home</a>
+                            <a href="About Page.html">Cookies</a>
+                            <a href="Contact Page.html">Help</a>
+                            <a href="Contact Page.html">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

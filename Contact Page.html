@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around Lanka</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Register OnClick -->
+    <script>
+        function showRegisterPopup() {
+            document.getElementById('register-overlay').style.visibility = 'visible';
+            document.getElementById('register-overlay').style.opacity = '1';
+        }
+    
+        function hideRegisterPopup() {
+            document.getElementById('register-overlay').style.visibility = 'hidden';
+            document.getElementById('register-overlay').style.opacity = '0';
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0">ALT</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Home Page.html" class="nav-item nav-link">Home</a>
+                    <a href="About Page.html" class="nav-item nav-link">About</a>
+                    <a href="Service Page.html" class="nav-item nav-link">Services</a>
+                    <a href="Package Page.html" class="nav-item nav-link">Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Destination Page.html" class="dropdown-item">Destination</a>
+                            <a href="Booking Page.html" class="dropdown-item">Booking</a>
+                        </div>
+                    </div>
+                    <a href="Contact Page.html" class="nav-item nav-link active">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary rounded-pill py-2 px-4" onclick="showRegisterPopup()">Register</a>
+                <!-- Popup structure -->
+                <div class="overlay_all" id="register-overlay">
+                    <div class="popup_all">
+                        <span class="popup_all-close" onclick="hideRegisterPopup()">&times;</span>
+                        <h2>Register</h2>
+                        <form class="register-all">
+                            <p>Name</p>
+                            <input type="text" placeholder="Enter Name" required>
+                            <p>Email</p>
+                            <input type="email" placeholder="Enter Email" required>
+                            <p>Phone</p>
+                            <input type="tel" placeholder="Enter Phone Number" required>
+                            <p>Password</p>
+                            <input type="password" placeholder="Enter Password" required>
+                            <p>Confirm Password</p>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <input type="submit" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero header -->
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">The Best Places to Go in Asia in 2024 </p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Colombo">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <main>
+        <section class="map mt mb">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55095.16024416365!2d80.00312187951305!3d9.661061393931577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1717097220122!5m2!1sen!2slk" width="100%" height="300vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="form mt mb content">
+            <h2 class="mb">Contact Us</h2>
+            <form action="Form.php" method="post">
+                <input type="text" placeholder="Enter The First Name" name="fname">
+                <input type="text" placeholder="Enter The Last Name" name="lname">
+                <input type="email" placeholder="Enter The Email" name="email">
+                <textarea rows="10" placeholder="Enter Your Message" name="message"></textarea>
+                <button type="submit" class="btn_10">Submit</button>
+            </form>
+        </section>
+        
+    </main>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="About Page.html">About Us</a>
+                    <a class="btn btn-link" href="Contact Page.html">Contact Us</a>
+                    <a class="btn btn-link" href="About Page.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="About Page.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="Contact Page.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 80, KKS Road, Nallur,Jaffna, Sri Lanka.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>021 221 2389 / +94 76 4534298</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ALT24PVT_Help@Gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/jaffna lib2.avif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/ella.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/kandy.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/nuwararliya.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/polonnaruwa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Around Lanka Tourisum Pvt & Ltd</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">Muhila Vijayakumar</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="Home Page.html">Home</a>
+                            <a href="About Page.html">Cookies</a>
+                            <a href="Contact Page.html">Help</a>
+                            <a href="Contact Page.html">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+   
+</body>
+</html>

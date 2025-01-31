@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around Lanka</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+
+    
+        
+</head>
+
+<body>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+               <h1 class="text-primary m-0">ALT</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Home Page.html" class="nav-item nav-link">Home</a>
+                    <a href="About Page.html" class="nav-item nav-link">About</a>
+                    <a href="Service Page.html" class="nav-item nav-link">Services</a>
+                    <a href="Package Page.html" class="nav-item nav-link">Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Destination Page.html" class="dropdown-item">Destination</a>
+                            <a href="Booking Page.html" class="dropdown-item active">Booking</a>
+                        </div>
+                    </div>
+                    <a href="Contact Page.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary rounded-pill py-2 px-4" onclick="showRegisterPopup()">Register</a>
+            <!-- Register -->
+            <div class="overlay_all" id="register-overlay">
+                <div class="popup_all">
+                    <span class="popup_all-close" onclick="hideRegisterPopup()">&times;</span>
+                    <h2>Register</h2>
+                    <form class="register-all">
+                        <p>Name</p>
+                        <input type="text" placeholder="Enter Name" required>
+                        <p>Email</p>
+                        <input type="email" placeholder="Enter Email" required>
+                        <p>Phone</p>
+                        <input type="tel" placeholder="Enter Phone Number" required>
+                        <p>Password</p>
+                        <input type="password" placeholder="Enter Password" required>
+                        <p>Confirm Password</p>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+       <!-- head img & text -->
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header rounded-3{}">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">The Best Places to Go in Asia in 2024 </p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Colombo">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-12 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Online Booking</h1>
+                        <p class="mb-4">Explore Sri Lanka effortlessly with Tourium's simple booking process. 
+                        Browse our curated tours spanning from the cultural heart of Kandy to the serene shores of Trincomalee. 
+                        With just a few clicks, secure your spot and embark on a journey filled with unforgettable experiences. 
+                        Whether you seek adventure, relaxation, or cultural immersion, Tourium ensures your Sri Lankan getaway is 
+                        seamless and stress-free.</p>
+                        <p class="mb-4">Choose Tourium for your Sri Lanka travels and enjoy peace of mind with our reliable customer
+                         support and flexible booking options. From planning your itinerary to experiencing the wonders of Colombo's 
+                        bustling markets or the misty mountains of Ella, we're committed to making your trip memorable. Start planning 
+                        your dream vacation today with Tourium and let us guide you through the beauty and diversity of Sri Lanka.</p>
+                        
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form -->
+    <section>
+
+        <div class="booking-form">
+            <img alt="" class="avatar" src="https://i.postimg.cc/zDyt7KCv/a1.jpg">
+            <h2>Booking Form</h2>
+            <form action="javascript:void(0);">
+                <p>Name</p><input placeholder="Enter Name" type="text" onkeypress="allowOnlyLetters(event)">
+                <p>Email</p><input placeholder="Enter Email" type="email">
+                <p>Phone</p><input placeholder="Enter Phone Number" type="tel">
+                <p>Password</p><input placeholder="Enter Password" type="password">
+                <p>Date</p><input placeholder="trip starting date" type="date">
+                <p>Services</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="guide">Guided Tours</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="transport">Travel Insurance</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="accommodation">Accommodation Booking</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="all-inclusive">Hotels Management</p>
+               
+                <p id="selected-service"></p>
+                <p>Destinations/Packages</p>
+                <select id="packages" onchange="toggleOptions()">
+                    <option value="">Select...</option>
+                    <option value="packages">Packages</option>
+                    <option value="destinations">Destinations</option>
+                </select>
+                <div id="package-options" style="display:none;">
+                    <p>Packages</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="short-trip">SHORT TRIP TO SRI LANKA</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="pleasant">PLEASANT SRI LANKA</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="thrilling">THRILLING SRI LANKA</p>
+                    <p><input type="checkbox" name="package" class="package-checkbox" value="magical">MAGICAL TRIP TO SRILANKA</p>
+                </div>
+                <div id="destination-options" style="display:none;">
+                    <p>Destinations</p>
+                    <p><input type="checkbox" name="destination">Jaffna</p>
+                    <p><input type="checkbox" name="destination">Colombo</p>
+                    <p><input type="checkbox" name="destination">Ella</p>
+                    <p><input type="checkbox" name="destination">Polonnaruwa</p>
+                    <p><input type="checkbox" name="destination">Nuwararliya</p>
+                    <p><input type="checkbox" name="destination">Kandy</p>
+                    <p><input type="checkbox" name="destination">Mannar</p>
+                    <p><input type="checkbox" name="destination">Galle</p>
+                    <p><input type="checkbox" name="destination">Dambull</p>
+                    <p><input type="checkbox" name="destination">Trincomalee</p>
+                    <p><input type="checkbox" name="destination">Anuradhapura</p>
+                    <p><input type="checkbox" name="destination">Sigirija</p>
+                    
+                </div>
+                <p id="selected-package"></p>
+                <input type="submit" value="Book Now" onclick="showPopup()">
+                <p><input type="checkbox">Remember Me</p>
+            </form>
+        </div>
+    </section>
+    <!-- Popup structure -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="popup-close" onclick="hidePopup()">&times;</span>
+            <h2>Booking Successful</h2>
+            <p>Your booking has been successfully completed. Thank you for choosing our service.
+                If you have any questions, please contact us.
+            </p>
+        </div>
+    </div>   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="About Page.html">About Us</a>
+                    <a class="btn btn-link" href="Contact Page.html">Contact Us</a>
+                    <a class="btn btn-link" href="About Page.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="About Page.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="Contact Page.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 80, KKS Road, Nallur,Jaffna, Sri Lanka.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>021 221 2389 / +94 76 4534298</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ALT24PVT_Help@Gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/jaffna lib2.avif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/ella.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/kandy.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/nuwararliya.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/polonnaruwa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Around Lanka Tourisum Pvt & Ltd</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">Muhila Vijayakumar</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="Home Page.html">Home</a>
+                            <a href="About Page.html">Cookies</a>
+                            <a href="Contact Page.html">Help</a>
+                            <a href="Contact Page.html">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/book.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* Common Style */
+
+.flex-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.mt {
+    margin-top: 5rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Style */
+
+.about-us-text {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.about-us-text::after {
+    content: '';
+    position: absolute;
+    inset: -100px 0 0 -100px;
+    background-image: url(/Img/pngwing.com.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/* Review Section */
+
+.rev-section {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    margin-bottom: .5rem;
+}
+
+.note {
+    font-size: 1.1rem;
+    color: red; /* Consistent color for emphasis */
+    font-style: italic;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.review {
+    padding: 32px;
+    text-align: center;
+    box-shadow: 0 16px 32px 19px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.review img {
+    height: 208px;
+    width: 208px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.review h3 {
+    color: #333;
+    font-size: 40px;
+    margin: 16px 0 8px;
+}
+
+.review p {
+    color: #666;
+    font-size: 20px;
+    padding: 16px 0;
+}
+
+.review .stars i {
+    color: gold;
+    font-size: 27.2px;
+}
+
+@media (max-width: 678px) {
+    .review {
+        flex: 1 1 100%;
+        margin-top: 1.5rem;
+    }
+}

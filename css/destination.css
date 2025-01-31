@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container_des {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 10px); /* Two columns layout */
+    max-width: 100%;
+}
+
+.container_des .image-container {
+    flex: 1;
+}
+
+.container_des .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container_des .text-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.container_des .text-container h1 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.container_des .text-container p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 1200px) {
+    .container_ma {
+        grid-template-columns: 1fr;
+    }
+
+    .container_des {
+        width: 100%;
+    }
+}

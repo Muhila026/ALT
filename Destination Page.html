@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around Lanka</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/destination.css">
+
+    <!-- Register OnClick -->
+    <script>
+        function showRegisterPopup() {
+            document.getElementById('register-overlay').style.visibility = 'visible';
+            document.getElementById('register-overlay').style.opacity = '1';
+        }
+    
+        function hideRegisterPopup() {
+            document.getElementById('register-overlay').style.visibility = 'hidden';
+            document.getElementById('register-overlay').style.opacity = '0';
+        }
+    </script>
+</head>
+<body>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0">ALT</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Home Page.html" class="nav-item nav-link">Home</a>
+                    <a href="About Page.html" class="nav-item nav-link">About</a>
+                    <a href="Service Page.html" class="nav-item nav-link">Services</a>
+                    <a href="Package Page.html" class="nav-item nav-link">Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Destination Page.html" class="dropdown-item active">Destination</a>
+                            <a href="Booking Page.html" class="dropdown-item">Booking</a>
+                        </div>
+                    </div>
+                    <a href="Contact Page.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary rounded-pill py-2 px-4" onclick="showRegisterPopup()">Register</a>
+                <!-- Register structure -->
+                <div class="overlay_all" id="register-overlay">
+                    <div class="popup_all">
+                        <span class="popup_all-close" onclick="hideRegisterPopup()">&times;</span>
+                        <h2>Register</h2>
+                        <form class="register-all">
+                            <p>Name</p>
+                            <input type="text" placeholder="Enter Name" required>
+                            <p>Email</p>
+                            <input type="email" placeholder="Enter Email" required>
+                            <p>Phone</p>
+                            <input type="tel" placeholder="Enter Phone Number" required>
+                            <p>Password</p>
+                            <input type="password" placeholder="Enter Password" required>
+                            <p>Confirm Password</p>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <input type="submit" value="Register">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero header -->
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">The Best Places to Go in Asia in 2024 </p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Colombo">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- heading -->
+         
+        <div class="container_ma py-5">
+            <div class="row g-5"> 
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3">Destinations</h6>
+            </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="Img/jaffna.webp" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Jaffna</h1>
+                <p>Perched on the northern tip of the pearl of Asia, Jaffna is a predominantly tamil city with an old school charm. From age old temples, its own historic ruins comprising of the ancient kingdoms of the North, calm and sandy beaches, museums and salt plains along the way, you are sure to find something for your wandering heart to enjoy. If a slow holiday is what you are after this is the place in Sri Lanka to visit.
+                    </p>
+                </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="Img/Mannar.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Mannar</h1>
+                <p>The quiet white-sand beaches, wild donkeys and historic attractions of Mannar are located away from most traveller’s holiday itineraries in Sri Lanka. Although it may be off-the-beaten path, Mannar holds a variety of attractions and things to do for explorers with a taste for adventure. From admiring the Baobab Tree to visiting the Mannar Fort or the Giant’s Tank, come discover the hidden treasures of Mannar in Sri Lanka.
+                    </p>
+                </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="Img/Galle.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Galle</h1>
+                <p>Built by the Portuguese and later fortified by the Dutch and British, the Galle Fort is a UNESCO World Heritage Site offering travellers a plethora of things to explore from a bygone era. Visit historic monuments as you stroll along the ancient ramparts of the fort. This old, culturally harmonious town resembles a quaint European village with cobblestoned streets lined with cafes, bistros, restaurants, boutique retail outlets and more.
+                    </p> </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/polonnaruwa.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Polonnaruwa</h1>
+                <p>An ancient city in the heart of the Cultural Triangle, Polonnaruwa is the second kingdom that was established on the island. Established as the capital from 1056 AD, it was the administrative centre until it fell in the 14th century, due to constant Chola invasions from India. However, many vestiges lay scattered in the present-day city, which include places of worship, monuments and relics of royalty.
+                    </p>
+                </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="Img/colombo.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Colombo</h1>
+                <p>The commercial capital of Sri Lanka; Colombo is a bustling city with a rich history, packed with a plethora of things to do and mesmerizing attractions from city temples to skyrise buildings, verdant parks and national monuments. The city is a potpourri of cultures, religions and races making it the most diverse on the island.
+                    </p>
+                </div>
+        </div>
+    
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/ella.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Ella</h1>
+                <p>The commercial capital of Sri Lanka; Colombo is a bustling city with a rich history, packed with a plethora of things to do and mesmerizing attractions from city temples to skyrise buildings, verdant parks and national monuments. The city is a potpourri of cultures, religions and races making it the most diverse on the island.
+                    </p>
+                </div>
+        </div>
+        
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/kandy.jpeg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Kandy</h1>
+                <p>Travel to Kandy and explore the last monarchical kingdom of Sri Lanka. A bustling town cradled between towering mountains of lush forest and acres of tea in the central highlands. Kandy is home to the sacred Temple of the Tooth Relic, a UNESCO World Heritage Site. There are a variety of things to do and places to visit in and around Kandy from scenic strolls through Udawatte Kele Forest Sanctuary and Peradeniya Botanical Gardens to witnessing splendid cultural performances and religious parades.
+                    </p>
+                </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/Dambulla.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Dambull</h1>
+                <p>Located in the Central Province of Sri Lanka, the small town of Dambulla is a treasure trove of religious artefacts and monuments, along with possessing evidence of prehistoric life in the country. Being in the crossroads of the major kingdoms of Anuradhapura, Polonnaruwa, and even Kandy, the town has a slice of every kingdom that thrived, and is best showcased by the Rangiri Dambulla Cave Temples.
+                    </p> </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/nuwararliya.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Nuwara Eliya</h1>
+                <p>Nuwara Eliya, meaning the City of Light, is located in the central province of Sri Lanka and is considered the most important region for tea production, with the coolest temperatures in the country, ranging from 10-21 degree celsius. Explore the tea estates, the lakes, picturesque landscapes and historic buildings as you discover the elegance and old school charm of Sri Lanka’s Little England.
+                    </p> </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/Trincomalee.jpg" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Trincomalee</h1>
+                <p>Located on the east coast of the island, right next to a natural harbour that was once an epicentre of strategic naval placings in the days of old, the town of Trincomalee is shrouded in many a tale that is both mythological and documented. The town possesses a multitude of experiences for any and all traveller journeying across the east coast of the island. Visit Trincomalee and discover the beauty of this city.
+                    </p>
+                </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/Anuradhapura.webp" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Anuradhapura</h1>
+                <p>Anuradhapura is affectionately referred to as the ‘Garden of Dagobas’. Located in the heart of the Cultural Triangle, this ancient city was documented as the first kingdom of Sri Lanka, dating to the 4th century BC. It was during the peak of this kingdom that Buddhism became the established religion in the country, which is signified by the dominating structure of the Jaya Sri Maha Bodhiya along with other temples and ruins dotted around the historic town. Stroll along the remnants of the past or cycle around the ancient kingdom instead
+                    </p> </div>
+        </div>
+        <div class="container_des">
+            <div class="image-container">
+                <img src="img/Sigiriya.webp" alt="Sample Image">
+            </div>
+            <div class="text-container">
+                <h1>Sigirija</h1>
+                <p>Sigiriya known as Lion Rock pronounced see-gi-ri-yə. The ancient rock fortress is located in the Central Province of Sri Lanka, in the town of Dambulla. A site of historical and archaeological significance that is dominated by a massive column of rock approximately 180 m or 590 ft in high. Moreover, Dambulla is directly accessible through private transport, or by train and bus from Colombo
+                    </p>
+                </div>
+        </div>
+        </div>
+        </div>
+    </main>    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="About Page.html">About Us</a>
+                    <a class="btn btn-link" href="Contact Page.html">Contact Us</a>
+                    <a class="btn btn-link" href="About Page.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="About Page.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="Contact Page.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 80, KKS Road, Nallur,Jaffna, Sri Lanka.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>021 221 2389 / +94 76 4534298</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ALT24PVT_Help@Gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/jaffna lib2.avif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/ella.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/kandy.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/nuwararliya.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/polonnaruwa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Around Lanka Tourisum Pvt & Ltd</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">Muhila Vijayakumar</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="Home Page.html">Home</a>
+                            <a href="About Page.html">Cookies</a>
+                            <a href="Contact Page.html">Help</a>
+                            <a href="Contact Page.html">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

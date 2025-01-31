@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around Lanka</title>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    
+</head>
+<body>
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+               <h1 class="text-primary m-0">ALT</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="Home Page.html" class="nav-item nav-link">Home</a>
+                    <a href="About Page.html" class="nav-item nav-link active">About</a>
+                    <a href="Service Page.html" class="nav-item nav-link">Services</a>
+                    <a href="Package Page.html" class="nav-item nav-link">Packages</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="Destination Page.html" class="dropdown-item">Destination</a>
+                            <a href="Booking Page.html" class="dropdown-item">Booking</a>
+                        </div>
+                    </div>
+                    <a href="Contact Page.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="btn btn-primary rounded-pill py-2 px-4" onclick="showRegisterPopup()">Register</a>
+            <!-- Register -->
+            <div class="overlay_all" id="register-overlay">
+                <div class="popup_all">
+                    <span class="popup_all-close" onclick="hideRegisterPopup()">&times;</span>
+                    <h2>Register</h2>
+                    <form class="register-all">
+                        <p>Name</p>
+                        <input type="text" placeholder="Enter Name" required>
+                        <p>Email</p>
+                        <input type="email" placeholder="Enter Email" required>
+                        <p>Phone</p>
+                        <input type="tel" placeholder="Enter Phone Number" required>
+                        <p>Password</p>
+                        <input type="password" placeholder="Enter Password" required>
+                        <p>Confirm Password</p>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="submit" value="Register">
+                    </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+       <!-- head img & text -->
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header rounded-3{}">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Enjoy Your Vacation With Us</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">The Best Places to Go in Asia in 2024 </p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Colombo">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us -->
+    <main>
+        <div class="container py-5">
+            <div class="row g-5">   
+                <div class="col-lg-12">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Around Lanka <span class="text-primary">Tourism</span></h1>
+                    <p class="mb-4">Around Lanka Tourism (PVT) Ltd is a leading local tourism guide company based in Jaffna, dedicated to showcasing the beauty and cultural richness of Sri Lanka. The company is committed to promoting Sri Lanka as a premier destination for both local and international visitors. Around Lanka Tourism focuses on harnessing the country's diverse attractions to provide unique and memorable experiences for tourists. By developing a vibrant and user-friendly website, the company aims to attract more visitors, benefit investors, and support local communities in a sustainable manner</p>
+                    <h1 class="mb-4">HISTORY</h1>
+                    <p class="mb-4">AIn 2005, recognizing the increasing interest in Sri Lanka as a prime tourist destination, Around Lanka Tourism (PVT) Ltd was established with the vision of providing exceptional travel experiences to both local and foreign tourists. Inspired by the nation's structured approach to tourism development, the company set out to offer a variety of services, including guided tours, accommodation arrangements, and travel packages tailored to diverse preferences.</p>
+                </div>
+            </div>
+        </div>
+        <!-- reviews -->    
+                <div class="container py-5">
+                    <div class="text-center">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Reviews</h6>
+                    </div>
+                <div class="reviews">
+                <div class="review">
+                <img src="img/cus1.jpg" alt="Samantha L from Paris">
+                <h3>Sarmila</h3>
+                <p>UK</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Around Lanka Tourism's website made planning our Sri Lanka trip a breeze! The easy navigation and detailed destination guides helped us create an unforgettable itinerary. Highly recommend!"</p>
+            </div>
+            <div class="review">
+                <img src="img/cos3.avif" alt="Rajiv K from New York">
+                <h3>Rajiv K</h3>
+                <p>New York</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>"Exploring Jaffna through Around Lanka Tourism’s website was an absolute delight. The site is well-organized and informative, offering great insights and easy booking options. Truly a one-stop solution for all travel needs in Sri Lanka."</p>
+            </div>
+            <div class="review">
+                <img src="img/cos2.jpeg" alt="John D from Germany">
+                <h3>Ravi</h3>
+                <p>Colombo</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                </div>
+                <p>"The vibrant images and comprehensive service listings on the Around Lanka Tourism site were fantastic. Booking our tours and accommodations was seamless and quick. A top-notch experience!"</p>
+            </div>
+        </div>  </div>             
+    </main>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Company</h4>
+                    <a class="btn btn-link" href="About Page.html">About Us</a>
+                    <a class="btn btn-link" href="Contact Page.html">Contact Us</a>
+                    <a class="btn btn-link" href="About Page.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="About Page.html">Terms & Condition</a>
+                    <a class="btn btn-link" href="Contact Page.html">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No. 80, KKS Road, Nallur,Jaffna, Sri Lanka.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>021 221 2389 / +94 76 4534298</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>ALT24PVT_Help@Gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/jaffna lib2.avif" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/ella.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/colombo lo.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/kandy.jpeg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/nuwararliya.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/polonnaruwa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Around Lanka Tourisum Pvt & Ltd</a>, All Right Reserved.
+                        Designed By <a class="border-bottom" href="#">Muhila Vijayakumar</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="Home Page.html">Home</a>
+                            <a href="About Page.html">Cookies</a>
+                            <a href="Contact Page.html">Help</a>
+                            <a href="Contact Page.html">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
